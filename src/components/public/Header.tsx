@@ -27,7 +27,7 @@ export const Header: React.FC<HeaderProps> = ({ onSearch }) => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="text-2xl font-bold text-blue-500 hover:text-blue-400 transition-colors">
-            BuzuTV
+            BUZUTV
           </Link>
 
           {/* Desktop Navigation */}

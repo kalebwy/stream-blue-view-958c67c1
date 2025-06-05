@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { LogOut, Settings, BarChart3 } from 'lucide-react';
@@ -20,7 +19,7 @@ export const AdminHeader: React.FC = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-8">
             <Link to="/admin" className="text-xl font-bold text-blue-400 hover:text-blue-300 transition-colors">
-              BuzuTV Admin
+              BUZUTV Admin
             </Link>
             
             <nav className="flex items-center space-x-6">
