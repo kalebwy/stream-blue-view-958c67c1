@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { LogOut, Settings, BarChart3 } from 'lucide-react';
@@ -14,7 +15,7 @@ export const AdminHeader: React.FC = () => {
   };
 
   return (
-    <header className="bg-gray-800 border-b border-gray-700">
+    <header className="bg-gray-950 border-b border-gray-800">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-8">
@@ -28,7 +29,7 @@ export const AdminHeader: React.FC = () => {
                 className={`flex items-center space-x-2 text-sm font-medium transition-colors ${
                   isActive('/admin') 
                     ? 'text-blue-400' 
-                    : 'text-gray-300 hover:text-white'
+                    : 'text-gray-400 hover:text-white'
                 }`}
               >
                 <BarChart3 className="h-4 w-4" />
@@ -40,7 +41,7 @@ export const AdminHeader: React.FC = () => {
                 className={`flex items-center space-x-2 text-sm font-medium transition-colors ${
                   isActive('/admin/movies') 
                     ? 'text-blue-400' 
-                    : 'text-gray-300 hover:text-white'
+                    : 'text-gray-400 hover:text-white'
                 }`}
               >
                 <Settings className="h-4 w-4" />
@@ -52,7 +53,7 @@ export const AdminHeader: React.FC = () => {
           <div className="flex items-center space-x-4">
             <Link
               to="/"
-              className="text-gray-300 hover:text-white text-sm font-medium transition-colors"
+              className="text-gray-400 hover:text-white text-sm font-medium transition-colors"
             >
               View Site
             </Link>
