@@ -20,10 +20,17 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   const login = (username: string, password: string): boolean => {
+    console.log('Login attempt:', { username, password });
+    console.log('Expected:', { username: 'admin', password: 'admin123' });
+    console.log('Username match:', username === 'admin');
+    console.log('Password match:', password === 'admin123');
+    
     if (username === 'admin' && password === 'admin123') {
+      console.log('Login successful');
       setIsAuthenticated(true);
       return true;
     }
+    console.log('Login failed');
     return false;
   };
 
