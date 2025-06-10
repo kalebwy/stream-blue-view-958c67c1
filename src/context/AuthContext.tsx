@@ -21,11 +21,17 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 
   const login = (username: string, password: string): boolean => {
     console.log('Login attempt:', { username, password });
-    console.log('Expected:', { username: 'admin', password: 'admin123' });
-    console.log('Username match:', username === 'admin');
-    console.log('Password match:', password === 'admin123');
+    console.log('Expected options:', [
+      { username: 'admin', password: 'admin123' },
+      { username: 'kalebadmin', password: '@admin' }
+    ]);
+    console.log('Username matches admin:', username === 'admin');
+    console.log('Username matches kalebadmin:', username === 'kalebadmin');
+    console.log('Password matches admin123:', password === 'admin123');
+    console.log('Password matches @admin:', password === '@admin');
     
-    if (username === 'admin' && password === 'admin123') {
+    if ((username === 'admin' && password === 'admin123') || 
+        (username === 'kalebadmin' && password === '@admin')) {
       console.log('Login successful');
       setIsAuthenticated(true);
       return true;

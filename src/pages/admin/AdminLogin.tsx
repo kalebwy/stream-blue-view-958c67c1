@@ -109,9 +109,15 @@ export const AdminLogin: React.FC = () => {
           )}
 
           <div className="bg-blue-900 border border-blue-700 text-blue-300 px-4 py-3 rounded-lg text-sm">
-            <p className="font-medium mb-1">Demo Credentials:</p>
-            <p>Username: <span className="font-mono">admin</span></p>
-            <p>Password: <span className="font-mono">admin123</span></p>
+            <p className="font-medium mb-2">Demo Credentials:</p>
+            <div className="space-y-1">
+              <div>
+                <span className="text-gray-300">Option 1:</span> Username: <span className="font-mono">admin</span>, Password: <span className="font-mono">admin123</span>
+              </div>
+              <div>
+                <span className="text-gray-300">Option 2:</span> Username: <span className="font-mono">kalebadmin</span>, Password: <span className="font-mono">@admin</span>
+              </div>
+            </div>
           </div>
 
           <button
